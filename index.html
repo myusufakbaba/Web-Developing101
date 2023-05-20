@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        label{
+            display: block;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>First Clc Bot</h1>
+    <form>
+        <label>First Input:
+            <input type="text" id = "int1">
+        </label>
+        <label>Second Input:
+            <input type="text" id = "int2" >
+        </label>
+        <input type="button" value = "Sum the values" id = "clc">
+    </form>
+    <div id = "result"></div>
+
+    <script>
+        var input1 = document.getElementById("int1");
+        var input2 = document.getElementById("int2");
+        var clcButton = document.getElementById("clc");
+        var result = document.getElementById("result");
+
+        clcButton.onclick = function()
+        {
+            var sum = Number(input1.value) + Number(input2.value);
+            result.innerHTML = sum
+        }
+    </script>
+</body>
+</html>
